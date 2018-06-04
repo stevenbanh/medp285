@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>A Web Document</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width, intitial-scale =1"> <!-- rescale content to device scale -->
+		<meta name="description" content="An example of a page using the video and audio tags"> <!-- search engines will refer to these tags -->
+		<meta name="author" content="Steven">
+	</head>
+
+	<body>
+		<!--Navigation-->
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li> <!--#name makes page jump to section that is listed-->
+				<li><a href="#project">Project</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#news">News</a></li>
+				<li><a href="#rights">Attribution</a></li>
+				<li><a href="http://facebook.com" target="_blank"><img src="img/facebook.png" height="16"></a></li>
+				<li><a href="../index.html"><img src="img/twitter.png" height="16"></a></li>
+			</ul>
+		</nav>
+
+		<!--Home-->
+		<header id="home">
+			<video autoplay loop> <!--video tag/ Loops video-->
+				<source src="video/gob.mp4" type="video/mp4"> <!--video source directory/video format type declaration-->
+				<source src="video/gob.webm" type="video/webm">
+				<source src="video/gob.ogv" type="video/ogg">
+			</video>
+		</header>
+
+		<!--Project-->
+		<section id="project"> <!--allows for project link button to force page to jump to this section-->
+			<h1>A Short Playful Animation</h1>
+			<p>
+				<strong>Lorem Ipsum</strong><br> <!--Description about your project-->
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis lectus vel turpis tincidunt, id maximus diam pharetra. Fusce feugiat libero et erat imperdiet, ut suscipit neque vulputate. Phasellus fringilla metus auctor velit tempus gravida. Aliquam eget enim at massa pulvinar condimentum. Donec vitae iaculis turpis, eu tempor mi. Integer vitae lectus convallis, ornare quam quis, fermentum nunc. Sed dictum, nibh sed dapibus interdum, leo ex imperdiet dui, eu ultrices massa augue in felis. Aliquam fringilla consequat risus quis lobortis.<br>
+
+				<a href="#nav">Top</a>
+			</p>
+		</section>
+
+		<!--About-->
+		<section id="about"> <!--allows for project link button to force page to jump to this section-->
+			<h1>An Idea for a Game</h1>
+			<p>
+				<strong>Lorem Ipsum</strong><br> <!--About yourself-->
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis lectus vel turpis tincidunt, id maximus diam pharetra. Fusce feugiat libero et erat imperdiet, ut suscipit neque vulputate. Phasellus fringilla metus auctor velit tempus gravida. Aliquam eget enim at massa pulvinar condimentum. Donec vitae iaculis turpis, eu tempor mi. Integer vitae lectus convallis, ornare quam quis, fermentum nunc. Sed dictum, nibh sed dapibus interdum, leo ex imperdiet dui, eu ultrices massa augue in felis. Aliquam fringilla consequat risus quis lobortis. <br>
+
+				<audio src="audio/snd00.mp3" autoplay controls></audio><br>
+					
+				The audio tag has the following attributes: autoplay, controls, loop, muted, preload and of course src...<br>
+
+				<a href="#nav">Top</a>
+			</p>
+		</section>
+
+		<!--News-->
+		<section id="news"> <!--allows for project link button to force page to jump to this section-->
+			<h1>News: This Summer Blockbusters</h1> <!--Any kind of news, doesn't have to be a table-->
+
+			<table border="1">
+				<tr> <!--tr = table row-->
+					<th>Title</th> <!--th = table header-->
+					<th>Company</th>
+					<th>Gross</th>
+				</tr>
+
+				<tr>
+					<td>Solo: A Star Wars Movie</td> <!--td = table data-->
+					<td>Walt Disney Pictures</td>
+					<td>$29.4M</td>
+				</tr>
+
+				<tr>
+					<td>Deadpool2</td>
+					<td>20th Century Fox</td>
+					<td>$23.4M</td>
+				</tr>
+			</table>
+
+			<p><a href="#nav">Top</a></p>
+
+		</section>
+
+		<!--Footer-->
+		<footer id="rights">
+			<h2>Attribution</h2>
+			<p>This work is licensed under the Creatife Common Attribution ShareAlike 3.0 License. CC</p><time datetime="2018-06-04"></time> <!--Used to declare last updated-->
+		</footer>
+
+		<p><a href="#nav">Top</a></p>
+
+	</body>
+</html>
